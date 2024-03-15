@@ -1,1 +1,78 @@
 @import url(../css/common.css);
+
+
+/* header style */
+header {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100px;
+  line-height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .inner-header {
+  /* border: 3px solid tomato; */
+  width: 84%;
+  margin: 0 auto;
+}
+
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  width: 200px;
+}
+header .inner-header .logo img {
+  width: 100%;
+}
+
+
+header .inner-header .gnb {
+  /* border: 3px solid red; */
+  float: left;
+  margin-left: 80px;
+}
+header .inner-header .gnb li {
+  /* border: 3px dashed yellow; */
+  float: left;
+  margin-right: 80px;
+}
+header .inner-header .gnb li a{
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+header .inner-header .gnb li a:hover{
+    color: #ff8342;
+}
+
+
+header .inner-header .tnb {
+  /* border: 3px solid blue; */
+  float: right;
+  color: white;
+  font-size: 16px;
+}
+header .inner-header .tnb li {
+  float: left;
+  margin-right: 25px;
+}
+header .inner-header .tnb li:first-child,
+header .inner-header .tnb li:nth-child(2) i{
+    margin-right: 8px;
+    font-size: 18px;
+}
+header .inner-header .tnb li:last-child a{
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+header .inner-header .tnb li:last-child a:hover{
+    background: white;
+    color: orange;
+}
+header .inner-header .tnb li:last-child i{
+    margin-left: 5px;
+}
+header .inner-header .gnb-mobile{
+    display: none;
+}
