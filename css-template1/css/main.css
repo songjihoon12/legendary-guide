@@ -414,7 +414,6 @@ section.sns ul li a:hover .img-box::after {
   opacity: 1;
 }
 
-
 section.sns ul li .bottom {
   padding: 20px 0 20px 30px;
   box-sizing: border-box;
@@ -436,7 +435,6 @@ section.sns ul li .bottom p.time i {
   margin-right: 5px;
   font-size: 0.9em;
 }
-
 
 /* footer style */
 footer {
@@ -486,7 +484,6 @@ footer .inner .list li a:hover {
 /* 반응형 웹 디자인 */
 /* 노트북 해상도 1600px 미만 */
 @media (max-width: 1600px) {
-
   header .inner-header,
   section .sub-container,
   footer .inner {
@@ -502,7 +499,8 @@ footer .inner .list li a:hover {
     width: 60%;
   }
 }
-  /* 태블릿 L사이즈, 노트북 S사이즈 해상도 */
+
+/* 태블릿 L사이즈, 노트북 S사이즈 해상도 */
 @media (max-width: 1024px) {
   header .inner-header nav {
     display: none;
@@ -544,8 +542,10 @@ footer .inner .list li a:hover {
   }
 }
 
+
+
 /* 태블릿 768px 해상도 (아이패드 미니) */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     
   section.main .main-title h2 {
       font-size: 40px;
@@ -554,13 +554,13 @@ footer .inner .list li a:hover {
       font-size: 20px;
   }
 
-  section.about .sub-container li {
+  section.about ul.sub-container li {
       float: none;
       width: 100%;
       margin-bottom: 150px;
   }
 
-  section.about .sub-container li .img-box {
+  section.about ul.sub-container li .img-box {
       height: 500px;
   }
 
@@ -576,7 +576,7 @@ footer .inner .list li a:hover {
   section.innovation .img-box .inner .bottom a {
       float: none;
       display: block;
-      width: 100px;
+      width: 200px;
       text-align: center;
       margin: 0 auto;
   }
@@ -587,6 +587,7 @@ footer .inner .list li a:hover {
 
   section.me ul.list ul.in li em {
       float: none;
+      display: block;
       width: 100%;
       font-size: 17px;
       margin-bottom: 5px;
@@ -656,19 +657,24 @@ footer .inner .list li a:hover {
       padding: 30px 0;
   }
 
-  section.about ul li {
+  section.about ul.sub-container li {
       border: 1px solid #ddd;
       box-sizing: border-box;
       background: #fafafa;
       margin-bottom: 10px;
+      height: 450px;
   }
 
-  section.about ul li a .img-box {
+  section.about ul.sub-container li .img-box {
       height: 300px;
   }
 
   section.innovation .img-box {
       height: 400px;
+  }
+
+  section.innovation .img-box .inner {
+    top: 40%;
   }
 
   section.me ul.list > li {
@@ -752,6 +758,7 @@ footer .inner .list li a:hover {
       padding: 20px 10px;
   }
 }
+
 
 
   
